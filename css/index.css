@@ -208,9 +208,13 @@ button:hover {
 @media (max-width: 500px) {
   /*Header Styles - Mobile */
 
+  nav {
+    width: 35%;
+  }
+
   nav a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   nav span {
@@ -224,7 +228,14 @@ button:hover {
     justify-content: center;
   }
   .title-container div {
-    height: 35vh;
+    height: 40vh;
+    width: 100%;
+    gap: 5%;
+    background-position-y: 70rem;
+  }
+
+  .title-container hr {
+    width: 100%;
   }
 
   h1 {
