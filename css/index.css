@@ -242,26 +242,23 @@ button:hover {
     display: flex;
     justify-content: column;
     flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid gray;
+    width: 95%;
   }
 
   .artist {
     width: 60%;
-    text-align: center;
-    border: 1px solid red;
   }
+
   .artist img {
-    width: 100%;
+    width: 85%;
     height: 30vh;
   }
 
-  .artist-container .artist a {
-    font-size: 16px;
+  .artist a {
+    font-size: 1.5rem;
   }
 
-  .artist-container p {
-    font-size: 1rem;
+  .artist .bio {
+    font-size: 0.83rem;
   }
 }
