@@ -244,9 +244,16 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array) {
-  return artists1900;
-}
+function get20s(array) {}
+//   const artists1900 = array.filter((artist) => {
+//     const yearsArray = (artist.years.split(" ")
+//     if ([0] === > 1899 && [1] === < 2000)
+//   });
+
+//   return artists1900;
+// }
+
+// console.log(get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -301,11 +308,16 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  const lotsOfArtArray = array.filter((artist) => {
-    artist.paintings > 100;
-  });
-  return lotsOfArtArray;
+  const lotsOfArtFiltered = array.filter((artist) => artist.paintings > 100);
+  const lotsofArtArray = [];
+  for (let i = 0; i < lotsOfArtFiltered.length; i++) {
+    lotsofArtArray.push(lotsOfArtFiltered[i].name);
+  }
+  return lotsofArtArray;
 }
+lotsOfArt(artists);
+
+// const result = words.filter(word => word.length > 6);
 
 /* ***** END OF TASKS ***** */
 
