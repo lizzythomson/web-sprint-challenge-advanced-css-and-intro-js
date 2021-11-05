@@ -232,6 +232,7 @@ button:hover {
     width: 100%;
     gap: 5%;
     background-position-y: 70rem;
+    margin-bottom: 1%;
   }
 
   .title-container hr {
