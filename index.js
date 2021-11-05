@@ -244,16 +244,22 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array) {}
-//   const artists1900 = array.filter((artist) => {
-//     const yearsArray = (artist.years.split(" ")
-//     if ([0] === > 1899 && [1] === < 2000)
-//   });
+function get20s(array) {
+  const nineteenHundredsArtists = [];
+  for (let i = 0; i < array.length; i++) {
+    const newArray = array[i].years.split(" ");
+    if (Number(newArray[0]) > 1899 && Number(newArray[2]) < 2000) {
+      nineteenHundredsArtists.push(array[i]);
+    } // <-- This is the closing if statement bracket
+  } // <-- This is the closing for loop bracket
+  const finalArray = [];
+  for (let i = 0; i < nineteenHundredsArtists.length; i++) {
+    finalArray.push(nineteenHundredsArtists[i].name);
+  }
+  return finalArray;
+} // <-- This is the closing function bracket
 
-//   return artists1900;
-// }
-
-// console.log(get20s(artists));
+get20s(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -315,7 +321,6 @@ function lotsOfArt(array) {
   }
   return lotsofArtArray;
 }
-lotsOfArt(artists);
 
 // const result = words.filter(word => word.length > 6);
 
