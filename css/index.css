@@ -224,7 +224,7 @@ button:hover {
     justify-content: center;
   }
   .title-container div {
-    height: 45vh;
+    height: 35vh;
   }
 
   h1 {
@@ -250,8 +250,8 @@ button:hover {
   }
 
   .artist img {
-    width: 85%;
-    height: 30vh;
+    width: 65%;
+    height: 20vh;
   }
 
   .artist a {
